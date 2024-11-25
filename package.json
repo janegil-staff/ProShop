@@ -1,0 +1,18 @@
+{
+  "name": "proshop",
+  "version": "2.0.0",
+  "description": "eCommerce application server",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js"
+  },
+  "author": "Jan Egil Staff Øvreteit",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
