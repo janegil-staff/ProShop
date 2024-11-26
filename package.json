@@ -3,16 +3,26 @@
   "version": "2.0.0",
   "description": "eCommerce application server",
   "type": "module",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon server/index.js"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefixx frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder.js -d"
   },
   "author": "Jan Egil Staff Øvreteit",
   "license": "MIT",
   "devDependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^9.1.0",
+    "dotenv": "^16.4.5",
     "nodemon": "^3.1.7"
   },
   "dependencies": {
-    "express": "^4.21.1"
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.2"
   }
 }
