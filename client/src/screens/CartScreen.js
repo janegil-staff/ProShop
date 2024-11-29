@@ -19,7 +19,7 @@ const CartScreen = () => {
 
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
-
+console.log(cart);
   const addToCarrtHandler = async (product, qty) => {
     dispatch(addToCart({ ...product, qty }));
   };
