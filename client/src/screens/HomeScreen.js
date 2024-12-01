@@ -1,14 +1,13 @@
 import { Row, Col } from "react-bootstrap";
 
 import Product from "../components/Product";
-import products from "../products";
 import { useGetProductsQuery } from "../slices/productApiSlice";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 
 const HomeScreen = () => {
   const { data: products, isLoading, error } = useGetProductsQuery();
-
+  console.log(products);
   return (
     <>
       {isLoading ? (

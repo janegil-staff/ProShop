@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button, Col, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import FormContainer from "../components/formContainer";
+import FormContainer from "../components/FormContainer";
 import CheckoutSteps from "../components/CheckoutSteps";
 import { savePaymentMethod } from "../slices/cartSlice";
 import { useDispatch, useSelector } from "react-redux";

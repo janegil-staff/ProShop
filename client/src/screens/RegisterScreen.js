@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import formContainer from "../components/formContainer";
+import formContainer from "../components/FormContainer";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../components/Loader";
 import { useRegisterMutation } from "../slices/usersApiSlice";
