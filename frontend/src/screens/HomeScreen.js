@@ -6,7 +6,7 @@ import Loader from '../components/Loader';
 import Message from '../components/Message';
 import Paginate from '../components/Paginate';
 
-import ProductCarousel from '../components/ProdductsCarousel';
+import ProductCarousel from '../components/ProductsCarousel';
 import { useGetProductsQuery } from '../slices/productApiSlice';
 
 

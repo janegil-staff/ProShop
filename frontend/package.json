@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:8000",
+  "author": "Jan Egil Staff Øvreteit",
   "dependencies": {
     "@paypal/react-paypal-js": "^8.7.0",
     "@reduxjs/toolkit": "^2.3.0",

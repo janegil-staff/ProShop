@@ -6,7 +6,6 @@ import Loader from "../components/Loader";
 import { useRegisterMutation } from "../slices/usersApiSlice";
 import { setCredentials } from "../slices/authSlice";
 import { toast } from "react-toastify";
-import FormContainer from "../components/FormContainer";
 
 const RegisterScreen = () => {
   const [email, setEmail] = useState("");
