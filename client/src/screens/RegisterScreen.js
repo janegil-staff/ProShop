@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import formContainer from "../components/FormContainer";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../components/Loader";
 import { useRegisterMutation } from "../slices/usersApiSlice";
 import { setCredentials } from "../slices/authSlice";
 import { toast } from "react-toastify";
+import FormContainer from "../components/FormContainer";
 
 const RegisterScreen = () => {
   const [email, setEmail] = useState("");
