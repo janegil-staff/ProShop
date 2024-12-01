@@ -10,7 +10,8 @@
     "client": "npm start --prefixx frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder.js",
-    "data:destroy": "node backend/seeder.js -d"
+    "data:destroy": "node backend/seeder.js -d",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client"
   },
   "author": "Jan Egil Staff Øvreteit",
   "license": "MIT",
